@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.supermax_storemapping"
+    android:versionCode="12"
+    android:versionName="1.8">
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <!-- Permission to access data from network provider -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Permission for receiveing GCM message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Permission to get the Gmail account(This is required only if you are developing application for lower than android version 4.0) -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/p_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        >
+
+        <receiver
+            android:enabled="true"
+            android:exported="true"
+
+            android:name=".BroadcastReceiverOnBootComplete"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".Splash_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LauncherActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+<!--
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+-->
+
+       <!-- <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+-->
+        <!-- <meta-data
+              android:name="com.google.android.maps.v2.API_KEY"
+              android:value="AIzaSyDPtMtLg5y_2h8T4nOMDubwR6QRwAeoQkA" />-->
+   <!--     <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBA3q5IyVaHDrXDvIz6AMq3ShgFhcxVf7g" />
+
+-->
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCyDylGZ0WEm6Wpfdpkl6Qddf2wZSN6uVE"/>
+
+        <service
+            android:name=".AppLocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".StorelistActivity"
+            android:label="@string/title_activity_storelist"
+            android:screenOrientation="portrait"
+            android:theme="@style/StorelistTheme" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".StorelistNewAdded"
+            android:label="@string/title_activity_storelist_new_added"
+            >
+        </activity>
+
+        <activity
+            android:name=".SyncMaster"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".AddNewStore_DynamicSectionWise"
+            android:label="@string/title_activity_add_new_store__dynamic_section_wise"
+            android:screenOrientation="portrait"
+            android:theme="@style/StorelistTheme"
+            android:configChanges="orientation|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name=".AndroidCameraExample"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <!-- <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>-->
+        </activity>
+
+
+        <service
+            android:name=".LocationUpdateService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!--<receiver
+              android:name=".MyReceiver"
+              android:enabled="true"
+              android:exported="false"
+              android:label="@string/app_name">
+            &lt;!&ndash;  &lt;!&ndash;<intent-filter>&ndash;&gt;
+              &lt;!&ndash;<action android:name="com.google.android.gms.location.sample.locationupdates"></action>&ndash;&gt;
+              &lt;!&ndash;</intent-filter>&ndash;&gt;&ndash;&gt;
+          </receiver>-->
+
+        <activity android:name=".AddedOutletSummaryReportActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.android.supermax_storemapping.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

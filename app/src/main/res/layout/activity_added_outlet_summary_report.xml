@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_header"
+        android:background="@drawable/custom_header_color">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/bardd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Account Census Report"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:typeface="normal"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_weight="1.5"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible"
+            android:src="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/ll_header"
+       android:layout_alignBottom="@+id/btn_refresh"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="8dp"
+       android:gravity="center"
+       android:id="@+id/radioGrp"
+       android:orientation="horizontal">
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="By Route"
+           android:textSize="13sp"
+           android:id="@+id/rb_byRoute"/>
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="By Category"
+           android:textSize="13sp"
+           android:layout_marginLeft="10dp"
+           android:id="@+id/rb_byCat"/>
+
+   </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/radioGrp"
+        android:layout_below="@+id/ll_header"
+        android:background="@drawable/btn_background"
+        android:text="Refresh"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:id="@+id/btn_refresh"
+        android:textSize="12sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/btn_refresh"
+        android:id="@+id/header"
+        android:visibility="gone"
+        android:background="@android:color/holo_red_light">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.80"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="12sp"
+            android:text="Route"
+            android:textColor="#FFF"
+            android:id="@+id/textView_ChildName"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.20"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:text="Total Stores"
+            android:textColor="#FFF"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="12sp"
+            android:id="@+id/textView_TotalStore"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.40"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:paddingTop="4dp"
+            android:text="Validated"
+            android:textColor="#FFF"
+            android:paddingBottom="4dp"
+            android:textSize="12sp"
+            android:id="@+id/textView_Validated"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.20"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="12sp"
+            android:text="Pending"
+            android:textColor="#FFF"
+            android:id="@+id/textView_Pending"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/header"
+        android:id="@+id/ll_overallDetails"
+        android:layout_above="@+id/txt_lstVisitTime"
+        android:visibility="gone"
+        android:background="@drawable/shadow_deep_orng">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:background="@drawable/green_color_bckgrnd"
+       >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.80"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="13sp"
+            android:text="Overall Details"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:id="@+id/textView_OverAll"
+            android:gravity="left|center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.20"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="13sp"
+            android:id="@+id/textView_OverAllTotal"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.40"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="6dp"
+            android:paddingTop="4dp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:paddingBottom="4dp"
+            android:textSize="13sp"
+            android:id="@+id/textView_OverAllValidate"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.20"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="13sp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:id="@+id/textView_OverAllPending"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#80f17025"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        android:layout_marginTop="2dp"
+
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/ll_inflateParent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Visit Time: "
+        android:padding="8dp"
+        android:visibility="gone"
+        android:textColor="#000"
+        android:id="@+id/txt_lstVisitTime"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

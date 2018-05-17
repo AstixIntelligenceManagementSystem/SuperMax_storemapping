@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--
+    <color name="my_color">#fff</color>
+    <color name="primaryColorDark">#25c</color>
+     <color name="primaryDarkColor">#123b00</color>
+    <color name="storelisttopcolor">#77400d</color>
+    <color name="radiocolor">#a75912</color>
+    <color name="black">#000</color>
+    <color name="blue">#0000ff</color>
+-->
+
+
+    <color name="my_color">#fff</color>
+    <color name="primaryColorDark">#D67407</color>
+    <color name="primaryDarkColor">#D67407</color>
+    <color name="storelisttopcolor">#D67407</color>
+    <color name="radiocolor">#1e45d2</color>
+    <color name="black">#000</color>
+    <color name="blue">#0000ff</color>
+
+    <!--  <color name="primaryColor">#2196F3</color>
+    <color name="primaryDarkColor">#1976D2</color>
+    <color name="accentColor">#F44336</color>
+    <color name="textColor">#FFFFFF</color> -->
+    
+</resources>

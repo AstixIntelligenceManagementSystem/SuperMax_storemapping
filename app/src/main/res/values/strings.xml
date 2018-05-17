@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+  <string name="app_name">SuperMax Store Mapping</string>
+
+    <!--<string name="app_name">SuperMax Store Mapping Stagging</string>-->
+
+ <!-- <string name="app_name">SuperMax Store Mapping Test</string>-->
+
+   <!-- <string name="app_name">SuperMax Store Mapping Dev</string>-->
+  <!--<string name="app_name">SuperMax Store Mapping Training</string>-->
+
+ <!-- <string name="app_name">SuperMax Store Mapping Demo</string>-->
+
+  <!--<string name="app_name">SuperMax Store Mapping Test release</string>-->
+
+
+    <string name="reason_prompt">Please Select Reason</string>
+
+    <string name="category_prompt">Please Select Category</string>
+
+    <string name="pending_data">Submit Pending Data</string>
+    <string name="submit_pending_data">Looks data has been not submitted yet, Please submit data before refreshing complete data</string>
+    <!-- start of Internet Message -->
+    <string name="genTermNoDataConnection">Information</string>
+    <string name="phone_nos">Phone Num:</string>
+
+    <string name="uploading_error">Error while uploading image</string>
+    <string name="genTermNoDataConnectionFullMsg">Your device has no Data Connection. \n Please ensure Internet is accessible to Continue.</string>
+    <string name="txtOk">OK</string>
+    <!-- End of Internet Message -->
+
+    <string name="genlocaldataMsg">Data saved locally,will send to server once Internet is accessible.</string>
+
+
+    <string name="second_msg_for_map">Please try to get your location once again, If location found to be reasonably accurate as per system it wil be saved.</string>
+    <string name="third_msg_for_map">Data will be saved with the current location which appear to be accurate..</string>
+    <string name="loc_not_found">Location cannot be found accurately by the system , store will be saved without Location.This can be done later.</string>
+
+    <string name="spinner_route">Routes </string>
+    <string name="spinner_store_type">Store Type </string>
+    <string name="spinner_trade_channel">Trade Channel </string>
+    <string name="spinner_store_Category">Store Category </string>
+    <string name="spinner_retailer_sales_type">Retailer Sales Type </string>
+    <string name="spinner_store_potential_type">Store Potential Type </string>
+    <string name="spinner_distributor_type">Please Select Category </string>
+    <string name="spinner_classification">Store Classification</string>
+    <string name="only_alpha_numeric_new">.- \n,abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="only_alpha_numeric_email">.- _,abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string-array name="chMonthlyVOL">
+        <item>Reason</item>
+        <item>Unpacked</item>
+        <item>Expire Date</item>
+        <item>Not Good Quality</item>
+        <item>High Price</item>
+    </string-array>
+
+    <string name="syncAlertErrMsgg"><small>Internet is slow..... \nTrying again \.....</small></string>
+    <string name="syncAlertErrMsggg"><small>Internet is slow. \n Data Saved. It will get submitted later on \n automatically.</small></string>
+    <string name="spinnerloc">Distributor Names </string>
+    <string name="spinnerarea">Route Names </string>
+    <string name="spinnerstore">Store Type </string>
+    <string name="spinnerroute">Available Route</string>
+    <!--    <string name="only_alpha_numeric">.?- abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+     -->
+
+    <string name="only_alpha_numeric">.- abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="atoreNameValidation">.-/ abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="nameValidation">. abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="addressValidation">.,/- abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="btnSaveData">Submit</string>
+    <string name="submit_sent_server">Submit And Sent\nto Server</string>
+    <string name="submit_not_sent_server">Submit but Not\nSent to Server</string>
+    <string name="saved_not_submit">Saved but\nnot Submit</string>
+    <string name="title_activity_sync_master">Sync Data</string>
+    <string name="connAlertErrMsg"><small>Your device has no Data Connection. \nPlease ensure Internet is accessible to Continue.</small></string>
+    <string name="battAlertErrMsg"><small>Your device is low on battery. \nPlease Charge your device\'s battery to Continue.</small></string>
+    <string name="syncAlertOKMsg"><small>Store details submission was successful</small></string>
+    <string name="syncAlertInvoiceOKMsg"><small>Delivery details submitted!</small></string>
+    <string name="submitConfirmAlert"><small>Store details will be Synced! \nDo you want to Store details?</small></string>
+    <string name="returnsConfirmAlert"><small>Store Stock Data will be Saved! \nDo you want to make Returns?</small></string>
+    <string name="returnsConfirmAlert2"><small>No Stock was taken! \nDo you want to Continue ?</small></string>
+    <string name="syncAlertErrMsg"><small>Sync was not successful. \nPlease try again.</small></string>
+    <string name="syncAlertErrMsgDayEndOrChangeRoute"><small>Due to Internet connectivity breakdown, not able to submitt store details. \nPlease try again.</small></string>
+    <string name="syncAlertNoRecordsMsg"><small>No Records available to Sync. \nPlease fill-in and submit the Questionnaire.</small></string>
+    <string name="syncAlertRecordsMsg"><small>New Records available to Sync. \nPlease Sync your Device\'s Data before filling Questionnaire.</small></string>
+    <string name="AlertNoMapRecordsMsg"><small>No Records available to plot Route Map. \nPlease fill-in and submit the Questionnaire.</small></string>
+    <string name="saveAlertOKMsg"><small>Details submitted successfully!</small></string>
+    <string name="title_activity_store_selection">StoreSelection</string>
+    <string name="title_activity_last_visit_details">LastVisitDetails</string>
+    <string name="title_activity_product_list">ProductList</string>
+    <string name="title_activity_add_store">Add Store</string>
+    <string name="title_activity_get_lock">Fetching Store Details..</string>
+    <string name="title_activity_stores_summary">Stores Summary</string>
+    <string name="title_activity_return">Stock Returns</string>
+    <string name="msg_loc" translatable="false">Retrieving Location…. This process may take up to 2 minutes to derive your accurate location.  Please wait till the next screen appears with your location</string>
+    <string name="internetProb" translatable="false">Internet connection is required to view location on map.</string>
+    <string name="changeRouteAlert">Do you really want to Change Route? \nAll Previous non-submitted orders will be lost!</string>
+    <string name="ImgSaveNContAlert">Do you want to Submit Store Photographs Now? \nYou can only do it One time!</string>
+    <string name="lastlatlng">Last Location: </string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="enable_gps_dialog">GPS provider not enabled. Would you like to enable it?</string>
+    <string name="no_gps_support">GPS provider not supported</string>
+    <string name="no_network_support">Network provider not supported</string>
+    <string name="title_activity_pic_mgr">Manage Store Photographs</string>
+    <string name="newVersionAlert">New Version of this application is available now. \nPlease Submit all your Un-submitted data and \ninstall the new Version!</string>
+    <string name="newVersionAlertOnLauncher">New Version of this application is available now. \nPlease click on OK to install new Version!</string>
+    <string name="txtReintsallNow">Re-Install Now</string>
+    <string name="txtNotNow">Not Now</string>
+    <string name="productlist_orderbooking">Order Booking Form</string>
+    <string name="productlist_returnbutton">Ø¹ÙˆØ¯Ø© Ø§Ù„Ù…Ù†ØªØ¬</string>
+    <string name="productlist_storebutton">Store Photo</string>
+    <string name="productlist_currentproduct">Current Product</string>
+    <string name="productlist_schemeapplicable">Scheme  Applicable</string>
+    <string name="productlist_sampleqty">Sample Qty.</string>
+    <string name="productlist_samplehint">Enter Sample Qty. here</string>
+    <string name="productlist_sampletotalhint">of Total Sample Issued</string>
+    <string name="productlist_cramt">Cr. Amt</string>
+    <string name="productlist_cradj">Cr. Adj</string>
+    <string name="productlist_crbal">Cr. Bal</string>
+    <string name="productlist_creditamount">Credit Amount :</string>
+    <string name="productlist_productleveldiscount">Product Level Discount :</string>
+    <string name="productlist_freeqtytotal">Free Qty Total </string>
+    <string name="productlist_netinvoicevalue">Net Invoice Value:</string>
+    <string name="productlist_nadditionaldiscount">Additional Discount:</string>
+    <string name="productlist_invoiceaftdiscount">Order After Discount :</string>
+    <string name="productlist_taxamount">Tax Amount :</string>
+    <string name="productlist_grossinvoicevalue">Gross Order Value :</string>
+    <string name="productlist_noofcoupons">No. of Coupons :</string>
+    <string name="productlist_totalcouponamount">Total Coupon Amount :</string>
+    <string name="productlist_amountprevdue">Amount Previous Due:</string>
+    <string name="productlist_amountprevdueduplicate">Amount Previous Due :</string>
+    <string name="productlist_amountoutstanding">Amount Outstanding:</string>
+    <string name="productlist_back">Back</string>
+    <string name="productlist_save">Save</string>
+    <string name="productlist_saveexit">Save &amp; Exit</string>
+    <string name="productlist_submit">Submit</string>
+    <string name="prodlstOderDetails">Store Details</string>
+    <string name="prodlstStorPhoto">Store Photo</string>
+    <string name="prodlstCategoryName">Category Name:</string>
+    <string name="prodlstCurrentProduct">Current Product</string>
+    <string name="prodlstSchmeApplicable">Scheme Applicable </string>
+    <string name="prodlstProduct">Product</string>
+    <string name="prodlstLodQty">LOD/Qty</string>
+    <string name="prodlstRate">Rate</string>
+    <string name="prodlstStock">Stock</string>
+    <string name="prodlstOQty">O.Qty</string>
+    <string name="prodlstOvalue">O.Val</string>
+    <string name="prodlstFQty">F.Qty</string>
+    <string name="prodlstDvalue">D.Val</string>
+    <string name="prodlstsmpQty">Sample Qty</string>
+    <string name="prodlstEnterSampleQtyHere">Enter Sample Qty here</string>
+    <string name="prodlstOfTotSamplIssues"> of Total Sample Issued :0</string>
+    <string name="prodlstCrAmt">Cr.Amt</string>
+    <string name="prodlstCrAdj">Cr.Adj</string>
+    <string name="prodlstCrBal">Cr.Bal</string>
+    <string name="prodlstCreditAmount">Credit Amount:</string>
+    <string name="prodlstProductLevelDiscount">Product Level Discount:</string>
+    <string name="prodlstFreeQtyTotal">Free Qty Total:</string>
+    <string name="prodlstNetInvoiceValue">Net Invoice Value:</string>
+    <string name="prodlstAdditionalDiscount">Additional Discount:</string>
+    <string name="prodlstInvoiceValueAfterDiscount">Invoice Value After Discount:</string>
+    <string name="prodlstTaxAmount">Tax Amount:</string>
+    <string name="prodlstGrossInvoiceValue">Gross Invoice Value:</string>
+    <string name="prodlstNoOfCoupons">No. of Coupons:</string>
+    <string name="prodlstTotCouponAmt">Total Coupon Amount:</string>
+    <string name="prodlstAmtPreviousDue">Previous Due:</string>
+    <string name="prodlstAmtCollected">Amount Collected:</string>
+    <string name="prodlstAmtOutStading">Amount Outstanding:</string>
+    <string name="productlist_tblproduct">Product</string>
+    <string name="productlist_tbllod">LOD/Qty</string>
+    <string name="productlist_tblrate">Rate</string>
+    <string name="productlist_tblstock">Stock</string>
+    <string name="productlist_tbloqty">O.Qty</string>
+    <string name="productlist_tbloval">O.Val</string>
+    <string name="productlist_tblfqty">F.Qty</string>
+    <string name="productlist_tbldval">D.Val</string>
+    <string name="genTermSelectStoresPendingToComplete">Are you sure to confirm the selected store ?</string>
+    <string name="genTermSelectStoresPendingToCancel">Are you sure to cancel the selected store ?</string>
+    <string name="genTermSelectStoresPendingToCompleteDayEnd">Following Orders are Not Submitted as Yet. Orders Not Selected for Submission now will be permanently lost.</string>
+    <string name="genTermSelectStoresPendingToCompleteChangeRoute">Following Non-Submitted Orders will be lost if you change Route without submitting.</string>
+    <string name="genTermPleaseEnterRetailerName">Please Enter Retailer Name</string>
+    <string name="genTermAddRetailerConformation">Are You Sure, You want to add this Retailer?</string>
+    <string name="genTermPleaseWaitNew">Please Wait ...</string>
+    <!-- <string name="genTermRetrivingLocation">Retrieving Location...</string> -->
+    <string name="genTermRetrivingLocation">Calculating GPS coordinates to Identify Store Location</string>
+    <string name="searchingnearbystores">Searching Nearby Stores</string>
+    <string name="rtrvng_loc">Retrieving your current location</string>
+
+    <string name="genTermGPSDisablePleaseEnable">GPS is not enabled. \n Please select all settings on the next page!</string>
+    <string name="genTermAvailableRoute">Available Route</string>
+    <string name="genTermRetrivingData">Retrieving Data</string>
+    <string name="genTermRetrivingSummary">Generating Summary Report</string>
+    <string name="genTermRetrivingTargetVsAchievedSummary">Generating Target Vs Achieved Report</string>
+    <string name="genTermDownloadData">Updating New Version;</string>
+    <string name="genTermInformation">Information</string>
+    <string name="genTermAreyouSuretoChangeRoute">Do you really want to Change Route?</string>
+    <string name="genTermNoActiveInternetConnectionItsRequired">No active Internet Connection! \n Active Internet Connection is required.</string>
+    <string name="genTernStoreOrdersubmitConfirmAlert"><small>Store details will be Synced! \n Do you want to Submit Details?</small></string>
+    <string name="genTernStoreOrderInvoicesubmitConfirmAlert"><small>Do you want to Submit Execution Details?</small></string>
+    <string name="genTernSubmittingOrderDetails">Submitting Store Details</string>
+    <string name="genTermNewlyAddedStoreCannothavePreviousstocks">Newly Added Store can not have previous Stocks</string>
+    <string name="genTermReturnsConfirmAlert2"><small>You will exit without saving stock data entered ! \nDo you want to Save Stocks ?</small></string>
+    <string name="genTermProcessingRequest">Processing Request..</string>
+    <string name="genTermPleaseConform">Please Confirm</string>
+    <string name="genTermchangeRouteAlert">Do you really want to Change Route? \n All Previous non-submitted orders will be lost!</string>
+    <string name="genTermDayEndAlertWithoutStoreSubmit">Do you really want to End your Day visit? \n All Previous non-submitted orders will be lost!</string>
+    <string name="genTermchangeRouteAlertWhenNoStoreisLeftToSubmit">Do you really want to Change Route? \n</string>
+    <string name="genTermDayEndAlert">Are you sure to end your day visit?</string>
+    <string name="genTermSubmitSelected">Submit Stores</string>
+    <string name="genTermNoStroeSelectedOnSubmit">No Stores Selected. \nPlease select any Store(s) or Cancel!</string>
+    <string name="genTermDirectlyChangeRoute">Discard Orders</string>
+    <string name="genTermPleaseSelectStore">Please Select Store</string>
+    <string name="genTermPleaseSelectDiffrentStore">Please select a Different Store!</string>
+    <string name="genTermsyncAlertOKMsg"><small>Sync was successful!</small></string>
+    <string name="genTermDatasyncinProgress"><small>Data Sync in Progress...</small></string>
+    <string name="genTermSyncErrornew">Sync Error!</string>
+    <string name="genTermSyncErrorFullMsg">Sync Error! \n\n Please check your Internet Connectivity &amp; Try Again!</string>
+    <string name="genTermRetrivingStoreDetails"><small>Retrieving Store Details</small></string>
+    <string name="genTermSubmitSelectedInvoice">Confirm Selected</string>
+    <string name="genTermSubmitCancelInvoice">Cancel Selected</string>
+    <string name="genTermSubmitCancelInvoiceList">OK</string>
+    <string name="genTermDirectlyChangeRouteInvoice">Directly Change Route</string>
+    <string name="txtYes">Yes</string>
+    <string name="txtNo">No</string>
+    <string name="txtConform">Conform</string>
+    <string name="txtBack">Back</string>
+    <string name="txtNext">Next</string>
+    <string name="txtSave">Save</string>
+    <string name="txtSaveandExit">Save &amp; Exit</string>
+    <string name="txtSubmit">Submit</string>
+    <string name="txtCancle">Cancel</string>
+    <string name="txtOnChangeRouteDayEndCancel">Cancel &amp; Go Back</string>
+    <string name="launcActiGetStores">Get Stores</string>
+    <string name="launcActiSelectRut">Select Route</string>
+    <string name="launcActiSalesPerformOptimi">Sales Performer Optimizer</string>
+    <string name="launcActiNoRutAvail">No Route Available</string>
+    <string name="genTermNoSchemeAvaill">No Scheme Available</string>
+    <string name="productlist_sales">Sales</string>
+    <string name="productlist_inventory">Inventory</string>
+    <string name="lastvisitdetails_lastorderdate">Last Order Date:</string>
+    <string name="lastvisitdetails_selectstore">Selected Store:</string>
+    <string name="lastvisitdetails_previouscredit">Previous Credit Amount:</string>
+    <string name="lastvisitdetails_previousbalance">Previous Balance Amount:</string>
+    <string name="lastvisitdetails_back">Back</string>
+    <string name="lastvisitdetails_next">Next</string>
+    <string name="lastvisitdetails_skuname">SKU Name</string>
+    <string name="lastvisitdetails_stock">Stock</string>
+    <string name="lastvisitdetails_oqty">O.Qty</string>
+    <string name="lastvisitdetails_fqty">F.Qty</string>
+    <string name="lastvisitdetails_schemedescription">Scheme Description</string>
+    <string name="lastvisitdetails_target">Target</string>
+    <string name="mysummary_checkretailersummary">Check Retailer Summary</string>
+    <string name="mysummary_todaysummary">Today\s Summary</string>
+    <string name="mysummary_totalsalesvalue">Total Sales Value:</string>
+    <string name="mysummary_totaldiscountvalue">Total Discount Value:</string>
+    <string name="mysummary_totalorderkg">Total Demand:</string>
+    <string name="mysummary_totalfreekg">Total Free:</string>
+    <string name="mysummary_totalsamplekg">Total Sample:</string>
+    <string name="mysummary_totalorderlit">Total Order Lt:</string>
+    <string name="mysummary_totalfreelit">Total Free Lt:</string>
+    <string name="mysummary_totalsamplelit">Total Sample Lt.:</string>
+    <string name="mysummary_TodaysSaleslersummary">Today\'s Summary :</string>
+    <string name="sumryTargetCall">Target Calls:</string>
+    <string name="mysummary_actualcallsOffRoute">Actual Calls-Off Route:</string>
+    <string name="mysummary_actualcalls">Actual Calls On-Route:</string>
+    <string name="mysummary_productivecalls">Productive Calls On-Route:</string>
+    <string name="mysummary_productivecallsOffRoute">Productive Calls Off-Route:</string>
+    <string name="mysummary_txtTgtSalesForDay">Target Sales Value for Day:</string>
+    <string name="mysummary_txtTgtSalesValuetillNow">Total Order Value till now:</string>
+    <string name="mysummary_callsRemaining">Calls Remaining:</string>
+    <string name="mysummary_Mdtsummary">MTD Summary As on :</string>
+    <string name="mysummary_TargetSalesValue">Target Sales Value:</string>
+    <string name="mysummary_AchivedSalesValueTillDate">Achieved Sales Value till Date:</string>
+    <string name="mysummary_RunRate">Run Rate:</string>
+    <string name="mysummary_ProdStoreMTD">Productive Stores MTD:</string>
+    <string name="mysummary_back">Back</string>
+    <string name="summarystoreTodaySalesSumary">Today Sales Summary</string>
+    <string name="summarystoreTodaySumary">Today Summary</string>
+    <string name="summarystoreActualCall">Actual Call:</string>
+    <string name="summarystoreProductiveCall">Productive Call:</string>
+    <string name="summarystoreSkuName">SKU Name</string>
+    <string name="summarystoreOQty">O.Qty</string>
+    <string name="summarystoreFQty">F.Qty</string>
+    <string name="summarystoreSQty">S.Qty</string>
+    <string name="summarystoreTOrder">T.Order</string>
+    <string name="summarystoreTFree">T.Free</string>
+    <string name="summarystoreTSample">T.Sample</string>
+    <string name="summarystoreTotSalesValues">Total Sales Value:</string>
+    <string name="summarystoreTotDiscountValues">Total Discount Value:</string>
+    <string name="summarystoreTotOrderKg">Total Order KG:</string>
+    <string name="summarystoreTotFreeKg">Total Free KG:</string>
+    <string name="summarystoreTotSampleKg">Total Sample KG:</string>
+    <string name="title_activity_view_added_store">ViewAddedStore</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="login">Login</string>
+    <string name="title_activity_recycler">RecyclerActivity</string>
+    <string name="quickstart_message">Click the SUBSCRIBE TO NEWS button below to subscribe to the
+        news topic. Messages sent to the news topic will be received. The LOG TOKEN button logs the
+        InstanceID token to logcat.</string>
+    <string name="subscribe_to_news">Subscribe To News</string>
+    <string name="log_token">Log Token</string>
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="title_activity_storelist">StorelistActivity</string>
+    <string name="title_activity_storelist_new_added">StorelistNewAdded</string>
+    <string name="title_activity_add_new_store__dynamic_section_wise">
+
+
+        AddNewStore_DynamicSectionWise
+    </string>
+
+</resources>

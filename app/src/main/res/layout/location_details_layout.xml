@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+android:layout_margin="10dp"
+    android:id="@+id/ll_address_section"
+
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_local_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:text="Local Area"/>
+        <EditText
+            android:id="@+id/etLocalArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/et_boundary"
+            style="@style/CustomEditTextStyle"
+            >
+
+
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:text="Pin Code"/>
+        <EditText
+            android:id="@+id/etPinCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@drawable/et_boundary"
+            style="@style/CustomEditTextStyle"
+            >
+
+
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+
+            android:textColor="@color/blue"
+            android:text="City"/>
+        <TextView
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Select"
+            android:background="@drawable/search_boundary"
+            style="@style/CustomEditTextStyle"
+            />
+
+
+        <EditText
+            android:id="@+id/etOtherCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:inputType="text"
+            android:visibility="gone"
+            android:background="@drawable/et_boundary"
+            style="@style/CustomEditTextStyle"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:text="State"/>
+        <TextView
+            android:id="@+id/etState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Select"
+            android:background="@drawable/search_boundary"
+            style="@style/CustomEditTextStyle"
+            />
+    </LinearLayout>
+
+</LinearLayout>

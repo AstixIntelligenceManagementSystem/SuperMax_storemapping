@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_landline"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <EditText 
+        android:id="@+id/ed_std_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="1"
+        android:maxLength="5"
+        style="@style/CustomEditTextStyle"
+        android:background="@drawable/et_boundary"
+        android:layout_marginRight="10dp"
+     />
+    
+     <EditText 
+         android:id="@+id/ed_phone_num"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+         style="@style/CustomEditTextStyle"
+        android:layout_weight="1"
+        android:background="@drawable/et_boundary"
+        android:maxLength="8"
+     />
+       <!-- android:background="@drawable/et_boundary" -->
+
+</LinearLayout>

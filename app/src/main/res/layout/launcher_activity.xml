@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <ImageView android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="130dp"
+        android:src="@drawable/banner"
+        android:scaleType="fitXY" />
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RSPL"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"/>
+-->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:background="@drawable/center_boundary"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:id="@+id/erreorSectionParent"
+            android:background="#014f96"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/erroricon"/>
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="4dp"
+android:layout_marginLeft="20dp"
+android:paddingBottom="10dp"
+                android:layout_marginRight="10dp"
+
+                android:id="@+id/errorMessageTextView"
+
+                android:textStyle="bold"
+                android:textSize="17sp"
+
+                android:text=""/>
+            
+            
+        </LinearLayout>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5b4242"
+            android:padding="5dp"
+
+            android:id="@+id/usernameTextView"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:text=""/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/TotalStoreAddedParent"
+            android:background="#014f96"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="TotalStoreAdded"/>
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:id="@+id/totalStoreTextview"
+                android:textStyle="bold"
+
+                android:gravity="center"
+                android:layout_weight=".5"
+android:background="@drawable/custom_textview_bndry"
+                android:layout_margin="10dp"
+                android:text="0"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/TodayStoreAddedParent"
+            android:background="#014f96"
+            android:layout_height="wrap_content">
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="TodayStoreAdded"/>
+            <TextView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight=".5"
+                android:id="@+id/ToadyStoreTextview"
+                android:background="@drawable/custom_textview_bndry"
+                android:layout_margin="10dp"
+                android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+
+            >
+            <Button android:layout_width="match_parent"
+
+                android:background="@drawable/logo_background"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+
+
+                android:textColor="#FFFF4424"
+                android:visibility="gone"
+                android:id="@+id/NewAddedStores"
+                android:textStyle="bold"
+                android:text="View Added Stores"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--  <android.support.design.widget.TextInputLayout
+     android:layout_width="match_parent"
+    android:layout_marginTop="120dp"
+     android:id="@+id/edittextParent1"
+   android:textColorHint="#fff"
+    android:layout_marginLeft="30dp"
+     android:theme="@style/TextLabel"
+    android:layout_marginRight="30dp"
+     android:layout_height="wrap_content">
+
+     <EditText
+         android:textColor="#fff"
+         android:background="@drawable/custom_edittext"
+        
+         android:textColorHint="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        
+        android:id="@+id/user_name_edit" />
+     
+
+</android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+     android:layout_width="match_parent"
+     
+      android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+     android:id="@+id/edittextParent2"
+      android:textColorHint="#fff"
+      
+     android:theme="@style/TextLabel"
+     android:layout_height="wrap_content">
+
+     <EditText
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:textColorHint="#fff"
+         android:background="@drawable/custom_edittext"
+        android:id="@+id/mobile_number" />
+     
+
+</android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+     android:layout_width="match_parent"
+     
+      android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+     android:id="@+id/edittextParent3"
+      android:textColorHint="#fff"
+      
+     android:theme="@style/TextLabel"
+     android:layout_height="wrap_content">
+
+     <EditText
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email-Id"
+        android:textColorHint="#fff"
+         android:background="@drawable/custom_edittext"
+        android:id="@+id/emailId" />
+     
+
+</android.support.design.widget.TextInputLayout>
+<android.support.design.widget.TextInputLayout
+     android:layout_width="match_parent"
+     
+      android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="20dp"
+     android:id="@+id/edittextParent4"
+      android:textColorHint="#fff"
+      
+     android:theme="@style/TextLabel"
+     android:layout_height="wrap_content">
+
+     <EditText
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#fff"
+         android:background="@drawable/custom_edittext"
+        android:id="@+id/password" />
+     
+
+</android.support.design.widget.TextInputLayout> 
+ <Button
+     
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="31dp"
+    android:layout_marginRight="31dp"
+    android:textAllCaps="false"
+    android:textSize="18sp"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button"
+        android:text="Register" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/logo_background"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFF4424"
+            android:visibility="visible"
+            android:id="@+id/AddStoreBtn"
+            android:textStyle="bold"
+            android:text="Proceed"
+            />
+
+        <Button android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/logo_background"
+            android:layout_height="40dp"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFFF4424"
+            android:visibility="gone"
+            android:id="@+id/ProceedBtn"
+            android:textStyle="bold"
+            android:text="Proceed"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:id="@+id/ExitBtn"
+            android:textStyle="bold"
+            android:text="Exit"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

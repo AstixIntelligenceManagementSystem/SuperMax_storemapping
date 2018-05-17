@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "788442522845",
+    "firebase_url": "https://supermaxstoremapping.firebaseio.com",
+    "project_id": "supermaxstoremapping",
+    "storage_bucket": "supermaxstoremapping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788442522845:android:a0a82eeb0666701e",
+        "android_client_info": {
+          "package_name": "com.example.android.supermax_storemapping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788442522845-ujvur9bm497iptdgnp9kl3hokgthmdim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRrGhbVDIJSgMiIdVQByAlSyBGCv9x4zk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

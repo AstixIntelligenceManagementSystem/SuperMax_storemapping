@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        />
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_ChangeCamera"
+            android:layout_width="0dp"
+
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Switch Camera"
+            android:visibility="gone"
+           />
+        <Button
+            android:id="@+id/button_capture"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo_background"
+            android:text="Capture"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/cancleCamera"
+            android:background="@drawable/logo_background"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:textColor="#FFFF4424"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+          />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/flashImage"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/flash_off"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

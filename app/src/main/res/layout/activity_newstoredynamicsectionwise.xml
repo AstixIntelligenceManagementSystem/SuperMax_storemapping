@@ -1,0 +1,231 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+
+
+    >
+    <!--
+    main layout background color instead of bg_rspl
+    android:background="#F5F5F5"
+    -->
+    <RelativeLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/rounded_header_corner"
+        >
+
+        <TextView
+            android:id="@+id/txt_Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add New Outlet"
+
+            android:textColor="#ED3338"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_exit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/exit" />
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:textColor="#ED3338"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ll_header"
+    android:layout_above="@+id/ll_button">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/fragmentForm"
+
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="250dp"
+
+
+        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Location on map is correct according to you?"/>
+            <RadioGroup
+                android:id="@+id/rg_yes_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"/>
+                <RadioButton
+                    android:id="@+id/rb_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"/>
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/ll_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_rfrshCmnt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_gravity="fill"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/black"
+                android:text="If you are inside store then please go out of the store and then click refresh button to update your location"/>
+                <Button android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:background="@drawable/logo_background"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:textColor="#FFFF4424"
+
+                    android:id="@+id/btn_refresh"
+                    android:textStyle="bold"
+                    android:text="Refresh"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/previous"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Back"
+                    android:gravity="center"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_save_Exit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/save_img"
+                    />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="Save &amp; Exit"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_next"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_next"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/next"
+                    />
+                <TextView
+                    android:id="@+id/txt_Next"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>
