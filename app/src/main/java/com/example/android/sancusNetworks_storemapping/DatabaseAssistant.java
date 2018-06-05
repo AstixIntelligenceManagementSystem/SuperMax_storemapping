@@ -1,4 +1,4 @@
-package com.example.android.supermax_storemapping;
+package com.example.android.sancusNetworks_storemapping;
 
 /**
  * Created by sunil.kumar on 7/6/2017.

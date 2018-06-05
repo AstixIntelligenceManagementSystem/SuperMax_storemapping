@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.supermax_storemapping"
+    package="com.example.android.sancusNetworks_storemapping"
     android:versionCode="12"
     android:versionName="1.8">
 
@@ -57,7 +57,7 @@
             android:enabled="true"
             android:exported="true"
 
-            android:name=".BroadcastReceiverOnBootComplete"
+            android:name="com.example.android.sancusNetworks_storemapping.BroadcastReceiverOnBootComplete"
             android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
 
             <intent-filter>
@@ -67,7 +67,7 @@
             </intent-filter>
         </receiver>
         <activity
-            android:name=".Splash_Activity"
+            android:name="com.example.android.sancusNetworks_storemapping.Splash_Activity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -77,7 +77,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LauncherActivity"
+            android:name="com.example.android.sancusNetworks_storemapping.LauncherActivity"
             android:screenOrientation="portrait" >
         </activity>
 
@@ -106,12 +106,12 @@
             android:value="AIzaSyCyDylGZ0WEm6Wpfdpkl6Qddf2wZSN6uVE"/>
 
         <service
-            android:name=".AppLocationService"
+            android:name="com.example.android.sancusNetworks_storemapping.AppLocationService"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name=".StorelistActivity"
+            android:name="com.example.android.sancusNetworks_storemapping.StorelistActivity"
             android:label="@string/title_activity_storelist"
             android:screenOrientation="portrait"
             android:theme="@style/StorelistTheme" >
@@ -125,24 +125,24 @@
             -->
         </activity>
         <activity
-            android:name=".StorelistNewAdded"
+            android:name="com.example.android.sancusNetworks_storemapping.StorelistNewAdded"
             android:label="@string/title_activity_storelist_new_added"
             >
         </activity>
 
         <activity
-            android:name=".SyncMaster"
+            android:name="com.example.android.sancusNetworks_storemapping.SyncMaster"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".AddNewStore_DynamicSectionWise"
+            android:name="com.example.android.sancusNetworks_storemapping.AddNewStore_DynamicSectionWise"
             android:label="@string/title_activity_add_new_store__dynamic_section_wise"
             android:screenOrientation="portrait"
             android:theme="@style/StorelistTheme"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
         <activity
-            android:name=".AndroidCameraExample"
+            android:name="com.example.android.sancusNetworks_storemapping.AndroidCameraExample"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
@@ -154,7 +154,7 @@
 
 
         <service
-            android:name=".LocationUpdateService"
+            android:name="com.example.android.sancusNetworks_storemapping.LocationUpdateService"
             android:enabled="true"
             android:exported="false"></service>
 
@@ -168,12 +168,12 @@
               &lt;!&ndash;</intent-filter>&ndash;&gt;&ndash;&gt;
           </receiver>-->
 
-        <activity android:name=".AddedOutletSummaryReportActivity"
+        <activity android:name="com.example.android.sancusNetworks_storemapping.AddedOutletSummaryReportActivity"
             android:screenOrientation="portrait"/>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.example.android.supermax_storemapping.provider"
+            android:authorities="com.example.android.sancusNetworks_storemapping.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

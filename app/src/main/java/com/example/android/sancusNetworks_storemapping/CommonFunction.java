@@ -1,4 +1,4 @@
-package com.example.android.supermax_storemapping;
+package com.example.android.sancusNetworks_storemapping;
 
 import android.content.Context;
 import android.graphics.Bitmap;

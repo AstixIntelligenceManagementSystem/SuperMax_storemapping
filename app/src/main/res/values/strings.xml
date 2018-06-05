@@ -2,18 +2,18 @@
 <resources>
 
 
-  <string name="app_name">SuperMax Store Mapping</string>
+  <string name="app_name">SancusNetworks Store Mapping</string>
 
-    <!--<string name="app_name">SuperMax Store Mapping Stagging</string>-->
+    <!--<string name="app_name">SancusNetworks Store Mapping Stagging</string>-->
 
- <!-- <string name="app_name">SuperMax Store Mapping Test</string>-->
+ <!-- <string name="app_name">SancusNetworks Store Mapping Test</string>-->
 
-   <!-- <string name="app_name">SuperMax Store Mapping Dev</string>-->
-  <!--<string name="app_name">SuperMax Store Mapping Training</string>-->
+   <!-- <string name="app_name">SancusNetworks Store Mapping Dev</string>-->
+  <!--<string name="app_name">SancusNetworks Store Mapping Training</string>-->
 
- <!-- <string name="app_name">SuperMax Store Mapping Demo</string>-->
+ <!-- <string name="app_name">SancusNetworks Store Mapping Demo</string>-->
 
-  <!--<string name="app_name">SuperMax Store Mapping Test release</string>-->
+  <!--<string name="app_name">SancusNetworks Store Mapping Test release</string>-->
 
 
     <string name="reason_prompt">Please Select Reason</string>
